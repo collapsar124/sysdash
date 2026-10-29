@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sysdash"
+version = "0.1.0"
+description = "Zero-dependency terminal dashboard for memory, CPU, thermal and disk on Android/Termux and Linux."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "sysdash contributors" }]
+keywords = ["termux", "android", "terminal", "dashboard", "monitoring", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: System :: Monitoring",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[project.scripts]
+sysdash = "sysdash.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/your-name/sysdash"
+
+[tool.setuptools]
+packages = ["sysdash"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint.per-file-ignores]
+# Fixture rows are literal captures of /proc/net/dev, which are long by nature.
+"tests/*" = ["E501"]
