@@ -39,6 +39,11 @@ packages = ["sysdash"]
 line-length = 100
 target-version = "py39"
 
+[tool.ruff.lint]
+# Pin the rule set explicitly: ruff's default selection grows between
+# releases, and style upgrades (UP*) should not fail CI for this project.
+select = ["E4", "E7", "E9", "F"]
+
 [tool.ruff.lint.per-file-ignores]
 # Fixture rows are literal captures of /proc/net/dev, which are long by nature.
 "tests/*" = ["E501"]

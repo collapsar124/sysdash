@@ -100,6 +100,10 @@ renderer geometry and CLI smoke tests. They run on the standard library alone:
 python -m unittest discover -s tests -v
 ```
 
+CI runs the suite on Ubuntu and macOS for Python 3.10, 3.12 and 3.13.
+Python 3.9 remains supported and passes on macOS, but the current
+Ubuntu 26.04 runner image no longer ships a 3.9 toolchain.
+
 The parsers are pure functions (text in, value out), so none of the tests need
 a phone, a terminal, or `/proc` access.
 

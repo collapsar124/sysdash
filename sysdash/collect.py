@@ -43,7 +43,7 @@ def _try_read(path: str) -> Tuple[Optional[str], Optional[str]]:
     """Return ``(text, None)`` or ``(None, reason)``."""
     try:
         return _read(path), None
-    except OSError as err:  # noqa: PERF203 - one file, one try
+    except OSError as err:
         return None, _reason(err)
 
 
