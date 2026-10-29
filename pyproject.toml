@@ -30,7 +30,7 @@ dev = ["pytest>=7", "ruff>=0.5"]
 sysdash = "sysdash.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/your-name/sysdash"
+Homepage = "https://github.com/collapsar124/sysdash"
 
 [tool.setuptools]
 packages = ["sysdash"]

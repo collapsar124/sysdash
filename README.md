@@ -1,6 +1,6 @@
 # sysdash
 
-[![CI](https://github.com/your-name/sysdash/actions/workflows/ci.yml/badge.svg)](https://github.com/your-name/sysdash/actions/workflows/ci.yml)
+[![CI](https://github.com/collapsar124/sysdash/actions/workflows/ci.yml/badge.svg)](https://github.com/collapsar124/sysdash/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](pyproject.toml)
@@ -43,7 +43,7 @@ pipx install sysdash        # or: pip install sysdash
 From a checkout:
 
 ```bash
-git clone https://github.com/your-name/sysdash
+git clone https://github.com/collapsar124/sysdash
 cd sysdash
 pip install -e .
 sysdash
